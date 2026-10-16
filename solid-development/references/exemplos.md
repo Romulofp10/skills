@@ -62,3 +62,14 @@ const createOrder = new CreateOrder(repo, notifier);
 | Métodos vazios em implementações | ISP |
 | `new` de serviços concretos dentro da regra de negócio | DIP |
 | Testes exigindo banco, rede ou muitos mocks | SRP / DIP |
+
+
+## Preferencias do usuario.
+- Sempre antes de começar a ler o codigo voce ira verificar o resumo dele , antes de aplicar qualquer coisa para saber do que se trata, quando for uma janela de context nova.
+
+## Preferencias front-end
+- toda vez que for trazer da api uma quantidade de dados utilize a paginacao do projeto e prepare para o recebimento dela.
+- Comentarios em cima do componente  informando o que faz e nomes de componentes order-component. order-item-list
+- Evite a utilizacao de unkwnow ou any. efetue uma pasta de tipagem de acordo com a entidade e tenha la a preparacao do payload e do response separadas. ou seja o contrato.
+- so colicar tipagem dentro do componente quando for algo especifico dele e que nao utilize em outros lugares, para que seja reaproveitado.
+- Quando for api que for trazer uma listagem de dados para o front-end trabalhe com paginacao.
